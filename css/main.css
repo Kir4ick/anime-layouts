@@ -1,0 +1,158 @@
+
+/* Подключаем модный шрифт */
+@font-face {
+    font-family: 'next-art';
+    src: url('../fonts/next_art-regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'additional';
+    src: url('../fonts/additional.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Переменные цветов */
+
+:root {
+    --blue: #1B9DCF;
+    --black: #000929;
+    --white: white;
+    --light-blue: #EFF5FE;
+    --red: #ff3856;
+    --green: #40AB66;
+}
+
+.color-green {
+    color: var(--green);
+}
+
+.color-blue {
+    color: var(--blue);
+}
+
+.background-blue {
+    background-color: var(--blue);
+}
+
+.background-green {
+    background-color: var(--green);
+}
+
+/* Обнуляем стили */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+image {
+    display: block;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+    font-family: 'additional';
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'next-art';
+}
+
+p, input, textarea, button, select, span {
+    font-family: 'additional';
+    font-size: 14px;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input::-ms-clear {
+    display: none;
+}
+
+button, input[type="submit"] {
+    display: block;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+/** Стили для основных классов **/
+
+body {
+    background-color: var(--light-blue);
+}
+
+.container {
+    width: 100%;
+    min-height: 100%;
+}
+
+.link-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.links-images {
+    margin-top: 5px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.links-images img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}

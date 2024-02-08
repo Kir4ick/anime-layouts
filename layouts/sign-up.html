@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <main>
+        <div class="container container-auth">
+            <div class="form-wrapper">
+                <div class="header-auth">
+                    <img src="../images/icons/sign-up-logo.png" alt="logo">
+                    <h1>Волшебный мир GHibli</h1>
+                </div>
+                <form action="" class="form auth">
+                    <div class="input-wrapper blue">
+                        <input type="text" placeholder="Введите почту">
+                        <p class="validation-exception"> Поле обязательно к заполнению </p>
+                    </div>
+                    <div class="input-wrapper blue">
+                        <input type="text" placeholder="Введите никнейм">
+                        <p class="validation-exception"> Поле обязательно к заполнению </p>
+                    </div>
+                    <div class="input-wrapper blue alert">
+                        <input type="text" placeholder="Введите пароль">
+                        <p class="validation-exception exception"> Поле обязательно к заполнению </p>
+                    </div>
+                    <div class="input-wrapper blue alert">
+                        <input type="text" placeholder="Введите повторите пароль">
+                        <p class="validation-exception exception"> Поле обязательно к заполнению </p>
+                    </div>
+                    <label for="avatar" class="file-wrapper draggable">
+                        <span>Выберите фотографию</span>
+                        <input accept="image/png, image/gif, image/jpeg" type="file" id="avatar">
+                    </label>
+                    <label for="consent" class="checkbox-wrapper">
+                        <input type="checkbox" id="consent">
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                    <button class="submit-auth background-blue" type="submit">
+                        <span class="text-button">
+                            <img src="../images/icons/preloader.svg" class="preloader" alt="">
+                            Зарегистрироваться
+                        </span>
+                    </button>
+                    <p class="link-page-auth">
+                        Уже есть аккаунт?
+                        <a href="" class="color-blue">Войти</a>
+                    </p>
+                </form>
+                <div class="link-wrapper link-auth">
+                    <span>Следи за нами: </span>
+                    <div class="links-images">
+                        <a class="icon-link" href="">
+                            <img src="../images/icons/links/vk.png" alt="">
+                        </a>
+                        <a class="icon-link" href="">
+                            <img src="../images/icons/links/telegram.png" alt="">
+                        </a>
+                        <a class="icon-link" href="">
+                            <img src="../images/icons/links/youtube.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-wrapper">
+                <img class="image-sign-up" src="../images/background/sign-up.png">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

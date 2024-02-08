@@ -1,0 +1,82 @@
+.input-wrapper {
+    margin: 32px 0px;
+    position: relative;
+}
+
+.input-wrapper input {
+    transition: 0.5s ease all;
+    border-radius: 15px;
+    padding: 14px 15px;
+    width: 100%;
+    background: inherit;
+}
+
+.green input {
+    border: 1px solid var(--green);
+}
+
+.blue input {
+    border: 1px solid var(--blue);
+}
+
+.alert input {
+    border: 1px solid var(--red);
+}
+
+.validation-exception {
+    opacity: 0;
+    transition: 0.5s ease all;
+    color: var(--red);
+    position: absolute;
+    left: 13px;
+    bottom: 0px;
+}
+
+.exception {
+    opacity: 1;
+    bottom: -22px;
+}
+
+.file-wrapper {
+    position: relative;
+    margin: 32px 0px;
+}
+
+.file-wrapper input {
+    display: none;
+}
+
+.draggable {
+    padding-top: 10px;
+    transition: 0.5s ease all;
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+    height: 200px;
+    border: 1px dashed var(--blue);
+    text-align: center;
+}
+
+input[type=checkbox] {
+    width: auto;
+}
+
+.checkbox-wrapper {
+    margin-left: 10px;
+}
+
+.checkbox-wrapper span {
+    margin-left: 15px;
+}
+
+.preloader {
+    top: -5%;
+    left: -25px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.text-button {
+    position: relative;
+}

@@ -1,0 +1,93 @@
+.container-auth {
+    max-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/** Изображение **/
+.image-wrapper {
+    width: 40%;
+}
+
+.image-sign-up {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+/** Форма **/
+
+.form-wrapper {
+    height: 100%;
+    padding: 20px 30px;
+    margin: 30px auto 0px;
+    width: 28%;
+}
+
+.header-auth {
+    text-align: center;
+}
+
+.header-auth h1 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.auth {
+    margin-top: 20px;
+}
+
+.link-wrapper {
+    margin-top: 10px;
+}
+
+.link-page-auth {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.submit-auth {
+    position: relative;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+}
+
+.link-auth {
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.link-auth span {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1330px) {
+    .image-wrapper {
+        display: none;
+    }
+    .form-wrapper {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .form-wrapper {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .form-wrapper {
+        margin-top: 15px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .form-wrapper {
+        margin-top: 5px;
+        width: 100%;
+    }
+}
