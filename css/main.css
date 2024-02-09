@@ -62,6 +62,7 @@ image {
 a, a:link, a:visited  {
     text-decoration: none;
     font-family: 'additional';
+    color: var(--black);
 }
 
 a:hover  {
@@ -88,6 +89,7 @@ ul, ul li {
 
 img {
     vertical-align: top;
+    object-fit: cover;
 }
 
 img, svg {
@@ -124,6 +126,10 @@ label {
     cursor: pointer;
 }
 
+.long-margin {
+    margin-top: 200px;
+}
+
 legend {
     display: block;
 }
@@ -131,12 +137,25 @@ legend {
 /** Стили для основных классов **/
 
 body {
+    overflow-x: hidden;
     background-color: var(--light-blue);
 }
 
 .container {
     width: 100%;
     min-height: 100%;
+}
+
+.container-content {
+    max-width: 1600px;
+    padding: 0px 30px;
+    margin: 0px auto;
+}
+
+@media screen and (max-width: 400px) {
+    .container-content {
+        padding: 0px 15px;
+    }
 }
 
 .link-wrapper {
@@ -155,4 +174,81 @@ body {
     width: 30px;
     height: 30px;
     object-fit: cover;
+}
+
+header .container-content {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.header-content a {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'next-art';
+}
+
+.header-content a.button-href {
+    font-weight: normal;
+    padding: 10px 30px;
+    border-radius: 15px;
+    color: var(--white);
+}
+
+@media screen and (max-width: 700px) {
+    header .container-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+section {
+    margin-top: 50px;
+}
+
+.footer-image {
+    transform: rotate(10deg);
+    z-index: -99;
+    top: -320px;
+    right: -10px;
+    position: absolute;
+}
+
+.footer-content {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-top: 350px;
+    position: relative;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content a {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'next-art';
+}
+
+.footer-content .links-container-footer {
+    display: flex;
+    column-gap: 40px;
+}
+
+footer .link-wrapper {
+    margin-right: 220px;
+}
+
+.footer-content span {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'next-art';
 }
